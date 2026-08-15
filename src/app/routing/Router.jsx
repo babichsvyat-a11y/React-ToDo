@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { BASE_URL } from "@/shared/constants";
 // import TaskPage from "@/pages/TaskPage";
 
@@ -10,6 +11,10 @@ const getCurrentPath = () => {
     : pathname;
 };
 
+=======
+// import TaskPage from "@/pages/TaskPage";
+
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
 const matchPath = (path, route) => {
   const pathParts = path.split("/");
   const routePaths = route.split("/");
@@ -32,11 +37,19 @@ const matchPath = (path, route) => {
 };
 
 export const useRoute = () => {
+<<<<<<< HEAD
   const [path, setPath] = useState(getCurrentPath());
 
   useEffect(() => {
     const onLocationChange = () => {
       setPath(getCurrentPath());
+=======
+  const [path, setPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const onLocationChange = () => {
+      setPath(window.location.pathname);
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
     };
     window.addEventListener("popstate", onLocationChange);
 

@@ -38,6 +38,10 @@ const tasksReducer = (state, action) => {
 const useTasks = () => {
   const [tasks, dispatch] = useReducer(tasksReducer, []);
 
+<<<<<<< HEAD
+=======
+  const [newTaskTitle, setNewTaskTitle] = useState("");
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
   const [searchQuery, setSearchQuery] = useState("");
   const [disappearingTaskId, setDisappearingTaskId] = useState(null);
   const [appearingTaskId, setAppearingTaskId] = useState(null);
@@ -67,7 +71,11 @@ const useTasks = () => {
     });
   }, []);
 
+<<<<<<< HEAD
   const addTask = useCallback((title, callbackAfterAdding) => {
+=======
+  const addTask = useCallback((title) => {
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
     // const newTaskTitle = newTaskInputRef.current.value;
 
     const newTask = {
@@ -76,7 +84,11 @@ const useTasks = () => {
     };
     tasksAPI.add(newTask).then((addedTask) => {
       dispatch({ type: "ADD", task: addedTask });
+<<<<<<< HEAD
       callbackAfterAdding();
+=======
+      setNewTaskTitle("");
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
       // newTaskInputRef.current.value = "";
       setSearchQuery("");
       newTaskInputRef.current.focus();
@@ -120,6 +132,11 @@ const useTasks = () => {
     deleteTask,
     deleteAllTasks,
     toggleTaskComplete,
+<<<<<<< HEAD
+=======
+    newTaskTitle,
+    setNewTaskTitle,
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
     searchQuery,
     setSearchQuery,
     newTaskInputRef,

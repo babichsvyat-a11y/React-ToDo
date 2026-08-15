@@ -3,7 +3,10 @@ import { TaskContext } from "@/enteties/todo";
 import RouterLink from "@/shared/ui/RouterLink";
 
 import styles from "./TodoItem.module.scss";
+<<<<<<< HEAD
 import { highlightCaseInsensitive } from "@/shared/utils/highlight";
+=======
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
 
 const TodoItem = (props) => {
   const { className = "", id, title, isDone } = props;
@@ -15,11 +18,16 @@ const TodoItem = (props) => {
     toggleTaskComplete,
     disappearingTaskId,
     appearingTaskId,
+<<<<<<< HEAD
     searchQuery,
   } = useContext(TaskContext);
 
   const highlightedTitle = highlightCaseInsensitive(title, searchQuery);
 
+=======
+  } = useContext(TaskContext);
+
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
   return (
     <li
       className={`
@@ -42,8 +50,13 @@ const TodoItem = (props) => {
       <label htmlFor={id} className={`${styles.label} visually-hidden`}>
         {title}
       </label>
+<<<<<<< HEAD
       <RouterLink to={`tasks/${id}`} aria-label="Task detail page">
         <span dangerouslySetInnerHTML={{ __html: highlightedTitle }} />
+=======
+      <RouterLink to={`/tasks/${id}`} aria-label="Task detail page">
+        {title}
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
       </RouterLink>
       <button
         className={styles.deleteButton}

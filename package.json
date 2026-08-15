@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "react-carshop",
+=======
+  "name": "react-ToDo",
+>>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
   "private": true,
   "version": "0.0.0",
   "type": "module",
