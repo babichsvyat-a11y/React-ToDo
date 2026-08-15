@@ -5,14 +5,9 @@ import { TaskContext } from "@/enteties/todo";
 
 const AddTaskForm = (props) => {
   const { styles } = props;
-<<<<<<< HEAD
 
   const [newTaskTitle, setNewTaskTitle] = useState("");
   const { addTask, newTaskInputRef } = useContext(TaskContext);
-=======
-  const { addTask, newTaskTitle, setNewTaskTitle, newTaskInputRef } =
-    useContext(TaskContext);
->>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
 
   const [error, setError] = useState("");
 
@@ -22,11 +17,7 @@ const AddTaskForm = (props) => {
   const onSubmit = (event) => {
     event.preventDefault();
     if (!isNewTaskTitleEmpty) {
-<<<<<<< HEAD
       addTask(clearNewTaskTitle, () => setNewTaskTitle(""));
-=======
-      addTask(clearNewTaskTitle);
->>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
     }
   };
 
