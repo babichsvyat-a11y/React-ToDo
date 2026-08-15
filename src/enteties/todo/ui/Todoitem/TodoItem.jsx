@@ -3,6 +3,7 @@ import { TaskContext } from "@/enteties/todo";
 import RouterLink from "@/shared/ui/RouterLink";
 
 import styles from "./TodoItem.module.scss";
+import { highlightCaseInsensitive } from "@/shared/utils/highlight";
 
 const TodoItem = (props) => {
   const { className = "", id, title, isDone } = props;
