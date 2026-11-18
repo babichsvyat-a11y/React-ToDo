@@ -1,16 +1,47 @@
-<<<<<<< HEAD
-# React-Car-Shop
-=======
-# React + Vite
+# React To-Do App 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and interactive To-Do application built with React. This project was created as a hands-on practice to master core React concepts, explore all essential React Hooks, and perform full CRUD operations using a mock JSON backend.
 
-Currently, two official plugins are available:
+![App Demo](./assets/demo.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Key Features
+- **Full CRUD Support:** Create, read, update, and delete tasks seamlessly.
+- **Task Filtering:** Filter tasks by status (All, Active, Completed).
+- **Persistent Storage:** All data is synced with a local `json-server` database.
+- **Responsive UI:** Clean and intuitive interface for managing daily tasks.
 
-## Expanding the ESLint configuration
+## 🧠 Concepts & Hooks Practiced
+- **Core React:** Component composition, props drilling, conditional rendering, and controlled forms.
+- **React Hooks:** 
+  - `useState` & `useEffect` for state management and API side effects.
+  - `useContext` & `useReducer` for global state handling.
+  - `useRef` for direct DOM access and input focus.
+  - `useMemo` & `useCallback` for performance optimization.
+- **REST API Integration:** Asynchronous data fetching (`fetch` / `axios`) connected to `json-server`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 3a835a8bf828e8cfe037ee331c4981704d7a61c7
+## 🛠️ Tech Stack
+- **Frontend:** React, CSS3 / Tailwind *(adjust if needed)*
+- **Mock Backend:** JSON Server (`db.json`)
+
+## 📦 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   cd your-repo-name
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the JSON Server (in a separate terminal):**
+   ```bash
+   npx json-server --watch db.json --port 3001
+   ```
+
+4. **Run the React app:**
+   ```bash
+   npm start
+   ```
